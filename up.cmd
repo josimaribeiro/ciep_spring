@@ -9,7 +9,7 @@ set "project_name=Projeto Java 2025"
 set "author=Josimar Ribeiro"
 set "save_path=%CD%"
 set "date_time=%DATE% %TIME%"
-set "logo_url=https://github.com/Prof-Josimar/diarioescolar/blob/main/web/images/logo.png"
+
 set "logo_url2=https://github.com/josimaribeiro/ciep_spring/blob/main/src/main/resources/static/IMG-INF/spring.png"
 
 set "filename=README.md"
@@ -25,7 +25,7 @@ echo - Diretório atual: %CD% >> %filename%
 for /f "tokens=* delims=" %%g in ('git --version') do echo - %%g >> %filename%
 echo. >> %filename%
 
-echo ^<img src="%logo_url%" width="300"^> >> %filename%
+
 echo ^<img src="%logo_url2%" width="300"^> >> %filename%
 
 echo. >> %filename%
