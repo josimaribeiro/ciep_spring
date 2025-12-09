@@ -1,22 +1,19 @@
-# 🚀 Projeto Atualizado **09/12/2025  6:06:18** ⚙️
-
-
-<img width="300" src="https://media.licdn.com/dms/image/v2/D5612AQGKYHDBZ5TSsQ/article-cover_image-shrink_720_1280/B56ZXgoCPAGoAM-/0/1743230357920?e=2147483647&v=beta&t=0pojjG98v9aleVMOSCWaGAuES7IoSf2wWIfO4j0gIRE" alt="CRUD PHP Laravel" style="border: 5px solid #333; border-radius: 10px;" />
-
-📅 Última atualização: **09/12/2025  6:06:18**
-
-Diretório atual: T:\dev\java\spring\aula
-
-Hostname da máquina: ACER-LAP
-
----
-
-## 📌 Histórico
-Este projeto é atualizado automaticamente via script.
-
-✔️ Commits enviados diretamente para o repositório remoto
-✔️ Registro de data e hora no README.md
-
----
-
-💻🧠✅✏️❌🔍📦
+# Projeto Java 2025 
+ 
+## Informações do sistema 
+- Data e hora: 09/12/2025  6:14:32,28 
+- Usuário: admin 
+- Computador: ACER-LAP 
+- Diretório atual: T:\dev\java\spring\aula 
+- git version 2.52.0.windows.1 
+ 
+<img src="https://github.com/Prof-Josimar/diarioescolar/blob/main/web/images/logo.png" width="300"> 
+<img src="https://qnax.sh/blog/wp-content/uploads/2024/04/d7b04738-bc60-48a8-bc99-d73a71ba998e-1024x640.webp" width="300"> 
+ 
+ 
+## Autor 
+Josimar Ribeiro 
+ 
+ 
+ OBS : oupl atalho para out.println(""); 
+ 
