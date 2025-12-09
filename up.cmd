@@ -10,7 +10,7 @@ set "author=Josimar Ribeiro"
 set "save_path=%CD%"
 set "date_time=%DATE% %TIME%"
 set "logo_url=https://github.com/Prof-Josimar/diarioescolar/blob/main/web/images/logo.png"
-set "logo_url2=https://qnax.sh/blog/wp-content/uploads/2024/04/d7b04738-bc60-48a8-bc99-d73a71ba998e-1024x640.webp"
+set "logo_url2=https://github.com/josimaribeiro/ciep_spring/blob/main/src/main/resources/static/IMG-INF/spring.png"
 
 set "filename=README.md"
 
