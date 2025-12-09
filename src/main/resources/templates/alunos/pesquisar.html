@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Pesquisar Aluno</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+</head>
+<body>
+<div class="container">
+	<div th:insert="fragments/header :: header"></div>
+    <h2>Pesquisar Aluno por Nome</h2>
+    
+	
+	<form th:action="@{/alunos/resultado}" method="get" class="form-inline">
+	    <div class="form-group">
+	        <label for="nome">Nome:</label>
+	        <input type="text" id="nome" name="nome" class="form-control" placeholder="Digite o nome" required autofocus>
+	    </div>
+	    <button type="submit" class="btn btn-primary">Pesquisar</button>
+	</form>
+
+    <br/>
+
+    <div th:if="${alunos != null}">
+        <h3>Resultado:</h3>
+        <table class="table table-bordered table-striped">
+            <thead>
+                <tr>
+                    <th>ID</th>
+                    <th>Nome</th>
+                    <th>Caixa</th>
+                    <th>Pasta</th>
+                    <th>Responsável</th>
+                    <th>Nascimento</th>
+                    <th>Obs</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr th:each="aluno : ${alunos}">
+                    <td th:text="${aluno.id}"></td>
+                    <td th:text="${aluno.nomeAluno}"></td>
+                    <td th:text="${aluno.numeroCaixa}"></td>
+                    <td th:text="${aluno.numeroPasta}"></td>
+                    <td th:text="${aluno.nomeResponsavel}"></td>
+                    <td th:text="${aluno.dataNascimento}"></td>
+                    <td th:text="${aluno.obs}"></td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</div>
+</body>
+</html>

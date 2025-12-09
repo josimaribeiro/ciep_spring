@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+
+<head>
+	<meta charset="UTF-8">
+	<title>Lista de Alunos</title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+</head>
+
+<body>
+
+	<div th:insert="fragments/header :: header"></div>
+	
+	<div class="container">
+		<h2>Lista de Alunos</h2>
+
+		<table class="table table-bordered table-striped">
+			<thead>
+				<tr>
+					<th>ID</th>
+					<th>Nome</th>
+					<th>Caixa</th>
+					<th>Pasta</th>
+					<th>Responsável</th>
+					<th>Nascimento</th>
+					<th>Obs</th>
+					<th>Ações</th> <!-- Nova coluna -->
+				</tr>
+			</thead>
+			<tbody>
+				<tr th:each="aluno : ${alunos}">
+					<td th:text="${aluno.id}"></td>
+					<td th:text="${aluno.nomeAluno}"></td>
+					<td th:text="${aluno.numeroCaixa}"></td>
+					<td th:text="${aluno.numeroPasta}"></td>
+					<td th:text="${aluno.nomeResponsavel}"></td>
+					<td th:text="${aluno.dataNascimento}"></td>
+					<td th:text="${aluno.obs}"></td>
+					<td>
+						<a th:href="@{/alunos/editar/{id}(id=${aluno.id})}" class="btn btn-primary btn-sm">Editar</a>
+
+						<form th:action="@{/alunos/deletar/{id}(id=${aluno.id})}" method="post" style="display:inline;">
+							<button type="submit" class="btn btn-danger btn-sm"
+								onclick="return confirm('Deseja realmente excluir?');">
+								Excluir
+							</button>
+						</form>
+					</td>
+
+				</tr>
+			</tbody>
+		</table>
+	</div>
+</body>
+
+</html>

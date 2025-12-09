@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Resultado da Pesquisa</title>
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet"/>
+</head>
+<body>
+	
+	<div th:insert="fragments/header :: header"></div>
+<div class="container">
+    <h2>Resultado da Pesquisa por: "<span th:text="${nomePesquisado}"></span>"</h2>
+    <table class="table table-bordered table-striped">
+        <thead>
+        <tr>
+            <th>ID</th>
+            <th>Nome</th>
+            <th>Caixa</th>
+            <th>Pasta</th>
+            <th>Responsável</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr th:each="aluno : ${alunos}">
+            <td th:text="${aluno.id}"></td>
+            <td th:text="${aluno.nomeAluno}"></td>
+            <td th:text="${aluno.numeroCaixa}"></td>
+            <td th:text="${aluno.numeroPasta}"></td>
+            <td th:text="${aluno.nomeResponsavel}"></td>
+        </tr>
+        </tbody>
+    </table>
+</div>
+</body>
+</html>

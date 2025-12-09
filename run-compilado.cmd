@@ -1,0 +1,1 @@
+start java -jar target\aula-0.0.1-SNAPSHOT.jar --spring.profiles.active=dev --logging.level.root=DEBUG

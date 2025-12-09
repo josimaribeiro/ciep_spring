@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org" lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>Página Inicial</title>
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet"/>
+</head>
+<body>
+
+    <div th:insert="fragments/header :: header"></div>
+
+    <center>
+        <h1>Sistema Controle de Arquivo Inativo CIEP</h1>
+        <p>Versão do Java: <span th:text="${javaVersion}">versão</span></p>
+        <p>Sistema Operacional: <span th:text="${osName}">sistema</span></p>
+		<p>Hora atual do servidor: 
+		    <span th:text="${#temporals.format(horaAtual, 'dd/MM/yyyy HH:mm:ss')}">hora formatada</span>
+		</p>
+    </center>
+
+</body>
+</html>
