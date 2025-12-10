@@ -29,6 +29,13 @@ echo. >> "%filename%"
 echo ## Autor >> "%filename%"
 echo %author% >> "%filename%"
 echo. >> "%filename%"
+
+for /f "skip=1 tokens=* delims=" %%a in ('wmic os get Version') do if not "%%a"=="" echo - Versao do Windows: %%a >> "%filename%"
+for /f "skip=1 tokens=* delims=" %%a in ('wmic os get BuildNumber') do if not "%%a"=="" echo - Build: %%a >> "%filename%"
+for /f "skip=1 tokens=* delims=" %%a in ('wmic os get OSArchitecture') do if not "%%a"=="" echo - Arquitetura: %%a >> "%filename%"
+
+
+
 echo OBS : atalho para out.println(""); >> "%filename%"
 echo. >> "%filename%"
 

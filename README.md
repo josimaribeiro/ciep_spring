@@ -1,7 +1,7 @@
 # Projeto Java 2025 
  
 ## Informações do sistema 
-- Data e hora: 10/12/2025 18:23:11,42 
+- Data e hora: 10/12/2025 18:26:51,56 
 - Usuário: admin 
 - Computador: ACER-LAP 
 - Diretório atual: T:\dev\java\spring\aula 
@@ -12,5 +12,11 @@
 ## Autor 
 Josimar Ribeiro 
  
+- Versao do Windows: 10.0.19044   
+- Versao do Windows:  
+- Build: 19044         
+- Build:  
+- Arquitetura: 64 bits          
+- Arquitetura:  
 OBS : atalho para out.println(""); 
  
