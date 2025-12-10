@@ -1,7 +1,7 @@
 # Projeto Java 2025 
  
 ## Informações do sistema 
-- Data e hora: 10/12/2025 17:55:32,47 
+- Data e hora: 10/12/2025 18:23:11,42 
 - Usuário: admin 
 - Computador: ACER-LAP 
 - Diretório atual: T:\dev\java\spring\aula 
@@ -9,10 +9,8 @@
  
 <img src="https://github.com/josimaribeiro/ciep_spring/blob/main/src/main/resources/static/IMG-INF/spring.png" width="300"> 
  
- 
 ## Autor 
 Josimar Ribeiro 
  
- 
- OBS : oupl atalho para out.println(""); 
+OBS : atalho para out.println(""); 
  
